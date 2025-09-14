@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Susan Wanjiku - Interactive Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>👩‍💻 Susan Wanjiku's Interactive Web Page</h1>
+    <button id="modeToggle">🌞 Toggle Light/Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Part 1: Interactive Elements -->
+    <section>
+      <h2>My Study Journey</h2>
+      <button id="increaseBtn">📈 Add Year</button>
+      <button id="decreaseBtn">📉 Remove Year</button>
+      <p>Years in Tech: <span id="counter">0</span></p>
+    </section>
+
+    <section>
+      <h2>FAQ About Me</h2>
+      <div class="faq">
+        <h3 class="faq-question">📚 Where did I study software?</h3>
+        <p class="faq-answer hidden">I studied sottware engeeniring.</p>
+      </div>
+      <div class="faq">
+        <h3 class="faq-question">🎓 What am I studying now?</h3>
+        <p class="faq-answer hidden">I’m currently pursuing Software Engineering at PLP.</p>
+      </div>
+      <div class="faq">
+        <h3 class="faq-question">💻 What programming languages do I know?</h3>
+        <p class="faq-answer hidden">I work with Python, JavaScript, Java, C, and a bit of PHP.</p>
+      </div>
+    </section>
+
+    <!-- Part 2: Interactive Tabs -->
+    <section>
+      <h2>My Skills</h2>
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="languages">Languages</button>
+        <button class="tab-btn" data-tab="projects">Projects</button>
+        <button class="tab-btn" data-tab="goals">Goals</button>
+      </div>
+      <div class="tab-content" id="languages">
+        <p>Languages I use: Python, JavaScript, Java, C, PHP.</p>
+      </div>
+      <div class="tab-content hidden" id="projects">
+        <p>Some projects include: student portals, ecommerce platforms, and simple interactive games.</p>
+      </div>
+      <div class="tab-content hidden" id="goals">
+        <p>My goal is to become a top software engineer and build scalable solutions for Africa and beyond.</p>
+      </div>
+    </section>
+
+    <!-- Part 3: Form Validation -->
+    <section>
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <label>
+          Name: <input type="text" id="name">
+          <span class="error" id="nameError"></span>
+        </label>
+        <br>
+        <label>
+          Email: <input type="text" id="email">
+          <span class="error" id="emailError"></span>
+        </label>
+        <br>
+        <label>
+          Message: <textarea id="message"></textarea>
+          <span class="error" id="messageError"></span>
+        </label>
+        <br>
+        <button type="submit">Send</button>
+      </form>
+      <p id="formMessage"></p>
+    </section>
+  </main>
+
+  <footer>
+  <p>© 2025 Susan Wanjiku | Software Engineering @ PLP | </p>
+  <p>
+    📧 <a href="mailto:susanwanjiku093@gmail.com">susanwanjiku093@gmail.com</a> |
+    📞 <a href="tel:+254718168958">+254 718168958</a>
+  </p>
+  <p>
+    🌐 <a href="https://github.com/suzanwanjiku" target="_blank">GitHub</a> |
+    💼 <a href="https://www.linkedin.com/in/susan-wanjiku/" target="_blank">LinkedIn</a>
+  </p>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
